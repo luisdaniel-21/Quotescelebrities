@@ -4,6 +4,8 @@
     <string name="quotes">Citas Celebres</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_Close">Close</string>
+    <string name="author">Nombre del autor</string>
+    <string name="quote">Agregar Cita</string>
 
 
 </resources>

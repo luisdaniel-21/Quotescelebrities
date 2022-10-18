@@ -45,8 +45,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         val citasView: Intent = Intent(this, QuoteRandomActivity::class.java)
+        val addQuote: Intent = Intent(this, AddQuoteActivity::class.java)
         when (item.itemId) {
             R.id.nav_item_one -> startActivity(citasView)
+            R.id.nav_item_two -> startActivity(addQuote)
         }
 
         drawer.closeDrawer(GravityCompat.START)
