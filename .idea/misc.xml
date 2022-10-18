@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Danie/Downloads/quotescelebrities/app/src/main/res/layout/activity_ejemplo.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/Danie/Downloads/quotescelebrities/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/Danie/Downloads/quotescelebrities/app/src/main/res/layout/app_bar_main.xml" value="0.13803418803418804" />
+        <entry key="..\:/Users/Danie/Downloads/quotescelebrities/app/src/main/res/layout/nav_header_main.xml" value="0.33" />
+        <entry key="..\:/Users/Danie/Downloads/quotescelebrities/app/src/main/res/menu/activity_main_draweer.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

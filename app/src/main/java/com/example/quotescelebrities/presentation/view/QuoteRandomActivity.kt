@@ -43,5 +43,3 @@ class QuoteRandomActivity : AppCompatActivity() {
 
 }
 
-
-//Agregamos este cambio a la rama nueva
