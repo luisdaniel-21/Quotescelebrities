@@ -17,15 +17,16 @@
 
         <activity
             android:name=".presentation.view.NavigationDrawerActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.view.QuoteRandomActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity
+            android:name=".presentation.view.QuoteRandomActivity"
+            android:exported="true">
+        </activity>
+    </application>
 </manifest>

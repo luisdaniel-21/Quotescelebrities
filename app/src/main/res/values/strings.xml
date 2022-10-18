@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">quotescelebrities</string>
+    <string name="app_name">Citas Celebres</string>
     <string name="action_settings">Settings</string>
     <string name="quotes">Citas Celebres</string>
     <string name="navigation_drawer_open">Open</string>

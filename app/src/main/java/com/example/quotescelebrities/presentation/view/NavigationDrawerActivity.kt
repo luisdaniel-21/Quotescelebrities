@@ -2,8 +2,10 @@ package com.example.quotescelebrities.presentation.view
 
 import android.content.Intent
 import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.RelativeLayout
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -18,7 +20,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
     private lateinit var drawer : DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
-    val citasView: Intent = Intent(this, QuoteRandomActivity::class.java)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +44,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
+        val citasView: Intent = Intent(this, QuoteRandomActivity::class.java)
         when (item.itemId) {
             R.id.nav_item_one -> startActivity(citasView)
         }
