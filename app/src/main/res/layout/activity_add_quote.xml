@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtAddAuthor"
+        android:id="@+id/edtAddAuthor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgAddQuote" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAddQuote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="95dp"
@@ -83,7 +83,22 @@
         android:hint="@string/quote"
         android:layout_marginStart="20dp"
         android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/txtAddAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddAuthor"
         tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/idQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddQuote"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

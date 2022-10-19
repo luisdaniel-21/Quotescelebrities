@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
 data class QuoteEntity ( //esta asociada a la base de datos
     @PrimaryKey
     @SerializedName("id") //pasar a un formato que pueda ser interpretado por la red
-    var id: Int = 0,
+    var id: Int=0,
     @SerializedName("quote") //cita
     var quote: String = "",
     @SerializedName("author") //autor
