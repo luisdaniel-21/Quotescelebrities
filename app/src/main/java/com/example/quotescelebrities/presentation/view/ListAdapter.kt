@@ -10,24 +10,34 @@ import com.example.quotescelebrities.data.local.entities.QuoteEntity
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
-    var quoteLIst = emptyList<QuoteEntity>()
 
-    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {}
+    var items = ArrayList<QuoteEntity>()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false))
+    fun setListData(data: ArrayList<QuoteEntity>){
+        this.items= data
+    }
+
+    class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
+
+
+        fun bind(data: QuoteEntity){
+
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListAdapter.MyViewHolder {
+        val inflater = LayoutInflater.from(parent.context).inflate(R.layout.recyclerview_item, parent, false)
+        return MyViewHolder(inflater)
     }
 
     override fun getItemCount(): Int {
-        return quoteLIst.size
+        return items.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val currentItem = quoteLIst[position]
-
-
-
+    override fun onBindViewHolder(holder: ListAdapter.MyViewHolder, position: Int) {
+        holder.bind(items[position])
 
     }
+
 
 }

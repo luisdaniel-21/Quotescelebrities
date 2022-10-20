@@ -36,9 +36,7 @@ class AddQuoteActivity : AppCompatActivity() {
         // setContentView(R.layout.activity_add_quote)
 
         binding.buttonAddQuote.setOnClickListener {
-
             insertDataToDatabase()
-
         }
     }
 
@@ -54,6 +52,8 @@ class AddQuoteActivity : AppCompatActivity() {
             //Add to database
             mUserViewModel.addQuote(quote)
             Toast.makeText(this, "Cita agregada Correctamente", Toast.LENGTH_SHORT).show()
+            binding.edtAddQuote.text.clear()
+            binding.edtAddAuthor.text.clear()
 
         }else{
             Toast.makeText(this, "No se ah podido crear la cita", Toast.LENGTH_SHORT).show()

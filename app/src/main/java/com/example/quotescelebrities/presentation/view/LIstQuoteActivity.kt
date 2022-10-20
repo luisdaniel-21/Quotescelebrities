@@ -12,5 +12,6 @@ class LIstQuoteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list_quote)
 
 
+
     }
 }

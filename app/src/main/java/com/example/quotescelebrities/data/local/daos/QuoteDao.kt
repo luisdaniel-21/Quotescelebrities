@@ -32,6 +32,7 @@ interface QuoteDao {
     @Query("DELETE FROM quote WHERE id=:quoteId ")
     suspend fun delete(quoteId: Int)
 
+
     @Query("SELECT * FROM quote ORDER BY author ASC")
     fun readAllData(): LiveData<List<QuoteEntity>>
 
