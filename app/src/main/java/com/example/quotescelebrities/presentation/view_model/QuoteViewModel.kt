@@ -1,4 +1,4 @@
-package com.example.quotescelebrities.domain.model
+package com.example.quotescelebrities.presentation.view_model
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

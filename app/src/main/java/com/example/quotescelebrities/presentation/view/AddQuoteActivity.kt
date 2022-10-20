@@ -6,18 +6,9 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import com.example.quotescelebrities.data.local.QuoteDB
-import com.example.quotescelebrities.data.local.daos.QuoteDao
 import com.example.quotescelebrities.data.local.entities.QuoteEntity
 import com.example.quotescelebrities.databinding.ActivityAddQuoteBinding
-import com.example.quotescelebrities.domain.model.QuoteModel
-import com.example.quotescelebrities.domain.model.QuoteViewModel
-import com.example.quotescelebrities.presentation.view_model.QuoteRandomViewModel
-
-import kotlinx.coroutines.GlobalScope
-
-import kotlinx.coroutines.launch
-import kotlin.text.Typography.quote
+import com.example.quotescelebrities.presentation.view_model.QuoteViewModel
 
 
 class AddQuoteActivity : AppCompatActivity() {
