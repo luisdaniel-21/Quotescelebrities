@@ -33,7 +33,7 @@ interface QuoteDao {
     suspend fun delete(quoteId: Int)
 
 
-    @Query("SELECT * FROM quote ORDER BY author ASC")
+    @Query("SELECT * FROM quote ORDER BY id ASC")
     fun readAllData(): LiveData<List<QuoteEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

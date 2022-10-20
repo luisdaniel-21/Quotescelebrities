@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 
 class QuoteViewModel (application: Application): AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<QuoteEntity>>
+    val readAllData: LiveData<List<QuoteEntity>>
     private val repository: QuoteNewRepository
 
     init {
