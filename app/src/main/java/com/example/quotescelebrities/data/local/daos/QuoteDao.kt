@@ -1,10 +1,12 @@
 package com.example.quotescelebrities.data.local.daos
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.quotescelebrities.data.local.entities.QuoteEntity
+import com.example.quotescelebrities.domain.model.QuoteModel
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -13,7 +15,7 @@ interface QuoteDao {
     suspend fun insert(quote: QuoteEntity)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(quotes: List<QuoteEntity>)
+    suspend fun insertAll(quote: List<QuoteEntity>)
 
     @Query("SELECT * FROM quote ORDER BY author ASC")
     fun getQuotes(): Flow<List<QuoteEntity>>
@@ -29,5 +31,12 @@ interface QuoteDao {
 
     @Query("DELETE FROM quote WHERE id=:quoteId ")
     suspend fun delete(quoteId: Int)
+
+    @Query("SELECT * FROM quote ORDER BY author ASC")
+    fun readAllData(): LiveData<List<QuoteEntity>>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun addQuote(quote: QuoteEntity)
+
 
 }

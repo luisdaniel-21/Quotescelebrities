@@ -7,6 +7,9 @@
         <item android:id="@+id/nav_item_two"
             android:icon="@drawable/add_list"
             android:title="Agregar Cita"/>
+        <item android:id="@+id/nav_item_three"
+            android:icon="@drawable/quote_list"
+            android:title="LIstado de Cita"/>
     </group>
 
 
