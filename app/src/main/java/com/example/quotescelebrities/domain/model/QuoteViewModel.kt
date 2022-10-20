@@ -25,7 +25,6 @@ class QuoteViewModel (application: Application): AndroidViewModel(application) {
     }
 
     fun addQuote(quote:QuoteEntity){
-
         viewModelScope.launch(Dispatchers.IO) {
             repository.addQuote(quote)
         }
