@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
+        <item android:id="@+id/nav_item_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Ïnicio"/>
         <item android:id="@+id/nav_item_one"
-            android:icon="@drawable/list"
-            android:title="Ver Cita"/>
+            android:icon="@drawable/eye_24"
+            android:title="Ver citas"/>
         <item android:id="@+id/nav_item_two"
             android:icon="@drawable/add_list"
-            android:title="Agregar Cita"/>
+            android:title="Agregar citas"/>
         <item android:id="@+id/nav_item_three"
             android:icon="@drawable/quote_list"
-            android:title="LIstado de Cita"/>
+            android:title="LIstado de citas"/>
     </group>
 
 

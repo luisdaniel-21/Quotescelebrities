@@ -18,9 +18,9 @@
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#CFD8DC"
+            android:background="@drawable/bgfondoazul"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:titleTextColor="#CFD8DC" />
+            app:titleTextColor="#FFFFFF" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

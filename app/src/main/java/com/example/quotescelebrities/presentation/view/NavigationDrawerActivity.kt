@@ -47,7 +47,9 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         val citasView: Intent = Intent(this, QuoteRandomActivity::class.java)
         val addQuote: Intent = Intent(this, AddQuoteActivity::class.java)
         val quoteList: Intent = Intent(this, LIstQuoteActivity::class.java)
+        val homeActivity: Intent = Intent(this, NavigationDrawerActivity::class.java)
         when (item.itemId) {
+            R.id.nav_item_home -> startActivity(homeActivity)
             R.id.nav_item_one -> startActivity(citasView)
             R.id.nav_item_two -> startActivity(addQuote)
             R.id.nav_item_three -> startActivity(quoteList)
